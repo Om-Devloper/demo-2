@@ -1,0 +1,178 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: poppins,Sans-serif;
+  text-align: justify;
+}
+.main{
+  color:#b69ba1!important
+}
+
+
+
+.main-primary{
+  color:#b69ba1!important;
+}
+.heading{
+  color: #b69ba1;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.socialMediaIconsIn{
+  color: #2803cd;
+  font-weight: 600;
+  font-size: 70px;
+  text-decoration: none;
+}
+
+.socialMediaIconsyoutube{
+  color: #ab0000;
+  font-weight: 600;
+  font-size: 70px;
+  text-decoration: none;
+}
+
+.socialMediaIcons{
+  color: #353738;
+  font-weight: 600;
+  font-size: 70px;
+  text-decoration: none;
+}
+
+.headingSkills{
+
+  color: #353738;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.headerbgDarkBlue{
+  background-color: #b69ba1;
+}
+
+.nav-link{
+  color: #ffffff;
+}
+
+.imgBg{
+  width: 9%;
+}
+.socialMedia{
+  border:1px;
+  border-color: #353738;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.2' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+.videoSection{
+  background-color:#e7d6e7;
+  border-radius: 30px;
+}
+.videoImg{
+  width: 100%;
+  border-radius: 30px;
+}
+
+.videoHeading{
+  color: #4b606e;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+#horizontalNav .navbar-nav .nav-item .nav-link {
+  font-size: larger;
+  letter-spacing: 0.05rem;
+}
+#horizontalNav .navbar-toggler:focus {
+  outline-color: #ffffff;
+}
+@media (min-width:1185) {
+  .imgBg{
+    width: 100%;
+  }
+  
+}
+
+@media (min-width: 1180px) {
+  #horizontalNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #horizontalNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #horizontalNav .navbar-collapse {
+    display: flex;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #horizontalNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #horizontalNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+.responciveImAGE{
+  width: 100%;
+}
+@media (max-width:1200) {
+  .responciveImAGE{
+    height: 35rem;
+    width: 55rem;
+  }
+}
+@media (max-width: 711px) {
+ 
+.responciveImAGE{
+  height: 25rem;
+  width: 45rem;
+}
+}
+
+.relative {
+  position: relative;
+  width: 80%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.relative::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.56);
+}
+
+
+.absolute {
+  position: absolute;
+  top: 80px;
+  right: -40px;
+  width: 300px;
+  height: 300px;
+}
