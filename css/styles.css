@@ -87,6 +87,14 @@ html, body {
   width: 100%;
   border-radius: 30px;
 }
+footer{
+  color: #ffffff;
+  background-color: #311E25;
+}
+.btnColor{
+  background-color: #311E25;
+  color: #ffffff;
+}
 
 .videoHeading{
   color: white;
@@ -149,7 +157,7 @@ html, body {
 }
 
 .text-color{
-  color: #85696f;
+  color: #311E25;
   
 }
 
