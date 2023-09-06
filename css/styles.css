@@ -6,7 +6,8 @@
 }
 html, body {
   max-width: 100%;
-  overflow-x: hidden;  
+  overflow-x: hidden; 
+  font-family: 'Cantarell'; 
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
@@ -21,7 +22,7 @@ html, body {
   color:#85696f!important;
 }
 .heading{
-  color: #85696f;
+  color: #000000;
   font-weight: 600;
   font-size: 50px;
 }
@@ -60,10 +61,6 @@ html, body {
 
 .nav-link{
   color: #ffffff;
-}
-
-.imgBg{
-  width: 9%;
 }
 .socialMedia{
   border:1px;
@@ -148,6 +145,10 @@ html, body {
   height: 25rem;
   width: 45rem;
 }
+}
+
+.text-color{
+  color: #85696f;
 }
 
 .relative {
