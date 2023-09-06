@@ -95,6 +95,9 @@ footer{
   background-color: #311E25;
   color: #ffffff;
 }
+.btnColor:hover{
+  background-color: #311E25;
+}
 
 .videoHeading{
   color: white;
