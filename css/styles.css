@@ -6,23 +6,29 @@
 }
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
-  font-family: poppins,Sans-serif;
+  overflow-x: hidden;  
   text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-spacing: -0.1em;
+
+
 }
 .main{
-  color:#b69ba1!important
+  color:#85696f!important
 }
-
-
-
 .main-primary{
-  color:#b69ba1!important;
+  color:#85696f!important;
 }
 .heading{
-  color: #b69ba1;
+  color: #85696f;
   font-weight: 600;
   font-size: 50px;
+}
+.size{
+  font-size: 25px;
+  word-spacing: 0.  1em;
+
 }
 
 .socialMediaIconsIn{
@@ -54,7 +60,7 @@ html, body {
 }
 
 .headerbgDarkBlue{
-  background-color: #b69ba1;
+  background-color: #85696f;
 }
 
 .nav-link{
