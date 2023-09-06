@@ -171,20 +171,54 @@ footer{
   top: 80px;
   right: -40px;
   width: 300px;
-  height: 300px;
 }
 @media (max-width: 991px) {
   .relative {
-    position: relative;
     width: 100%;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
   
   }
   .absolute {
-    position: absolute;
+    right: 2%;
     width: 70%;
-    height: 70%;
+  }
+}
+
+@media (max-width: 830px) {
+  .absolute {
+    right: 4%;
+    width: 70%;
+  }
+}
+@media (max-width: 730px) {
+  .absolute {
+    right: 8%;
+    width: 70%;
+  }
+}
+
+@media (max-width: 630px) {
+  .absolute {
+    right: 14%;
+    width: 70%;
+  }
+}
+@media (max-width: 560px) {
+  .absolute {
+    right: 20%;
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .absolute {
+    width: 100%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 430px) {
+  .absolute {
+    width: 100%;
+    left: 2%;
   }
 }
