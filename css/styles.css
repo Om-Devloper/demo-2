@@ -56,7 +56,7 @@ html, body {
 }
 
 .headerbgDarkBlue{
-  background-color: #85696f;
+  background-color: #311E25;
 }
 
 .nav-link{
@@ -79,7 +79,8 @@ html, body {
   }
 }
 .videoSection{
-  background-color:#e7d6e7;
+  background-color:#311E25;
+  color: white;
   border-radius: 30px;
 }
 .videoImg{
@@ -88,7 +89,7 @@ html, body {
 }
 
 .videoHeading{
-  color: #4b606e;
+  color: white;
   font-weight: 600;
   font-size: 23px;
 }
@@ -149,6 +150,7 @@ html, body {
 
 .text-color{
   color: #85696f;
+  
 }
 
 .relative {
