@@ -98,7 +98,15 @@ footer{
 .btnColor:hover{
   background-color: #311E25;
 }
-
+.font-spacing{
+  word-spacing: 0.1em;
+  font-family: "Kohinoor Devanagari";
+  font-size: 17px;
+  font-stretch: normal;
+  line-height: normal;
+  width: fit-content;
+  color:#757575;
+}
 .videoHeading{
   color: white;
   font-weight: 600;
