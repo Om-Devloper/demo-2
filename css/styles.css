@@ -79,7 +79,7 @@ html, body {
   }
 }
 .videoSection{
-  background-color:#311E25;
+  background-color:#7c6d72;
   color: white;
   border-radius: 30px;
 }
@@ -176,7 +176,6 @@ footer{
   background-color: rgba(255, 255, 255, 0.56);
 }
 
-
 .absolute {
   position: absolute;
   top: 80px;
@@ -189,60 +188,16 @@ footer{
   
   }
   .absolute {
-    right: 2%;
-    width: 70%;
-  }
-}
-
-@media (max-width: 830px) {
-  .absolute {
-    right: 4%;
-    width: 70%;
-  }
-}
-@media (max-width: 730px) {
-  .absolute {
-    right: 8%;
-    width: 70%;
-  }
-}
-
-@media (max-width: 630px) {
-  .absolute {
-    right: 14%;
-    width: 70%;
-  }
-}
-@media (max-width: 560px) {
-  .absolute {
-    right: 20%;
-    width: 70%;
-  }
-}
-
-@media (max-width: 500px) {
-  .absolute {
+    top: 80px;
+    right: auto;
     width: 100%;
-    left: 4%;
   }
+  
+.center{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
 }
-
-@media (max-width: 430px) {
-  .absolute {
-    width: 100%;
-    left: 1.5%;
-  }
-}
-
-@media (max-width: 400px) {
-  .absolute {
-    width: 100%;
-    left: 0.5%;
-  }
-}
-
-@media (max-width: 395px) {
-  .absolute {
-    left: 0%;
-  }
 }
