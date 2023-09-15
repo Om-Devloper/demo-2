@@ -12,8 +12,6 @@ html, body {
   hyphens: auto;
   -webkit-hyphens: auto;
   word-spacing: -0.1em;
-
-
 }
 .main{
   color:#85696f!important
@@ -199,4 +197,41 @@ footer{
   margin-right: auto;
   width: 400px;
 }
+}
+.responciveImAGE{
+  width: 100%;
+  height: 20rem;
+  background-position:center;
+  background-size: contain;
+}
+
+.relativeBanner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.relativeBanner::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+.absoluteBanner {
+  position: absolute;
+  top: 130px;
+  width: 100%;
+}
+.absoluteBack {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+}
+.headingBanner{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 50px;
 }
