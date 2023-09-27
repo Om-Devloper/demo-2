@@ -235,3 +235,49 @@ footer{
   font-weight: 600;
   font-size: 50px;
 }
+
+.share-buttons {
+  display: flex;
+  gap: 10px;
+  display:none;
+}
+.share-button {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.facebook {
+  background-color: #3b5998;
+  height: 40px;
+  width: 40px;
+}
+.twitter {
+  background-color: #1da1f2;
+  height: 40px;
+  width: 40px;
+}
+
+.linkedin {
+  background-color: #0077b5;
+  height: 40px;
+  width: 40px;
+}
+
+.pinterest {
+  background-color: #bd081c;
+  height: 40px;
+  width: 40px;
+}
+.reddit {
+  background-color: #ff4500;
+  height: 40px;
+  width: 40px;
+}
+.whatsapp {
+  background-color: #25d366;
+  height: 40px;
+  width: 40px;
+}
