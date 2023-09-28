@@ -13,7 +13,6 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
-
     <title>Stories</title>
 
     <link
@@ -157,7 +156,7 @@
               
             </div>
           </div>
-          <div class="absoluteBanner text-center">
+          <div class="absoluteBanner container">
             <p class="headingBanner">Stories</p>
             <span style="color: #fff; font-size: 25px"
               >"हमारी कोशिश है, आपकी कशिश बनी रहे"
@@ -177,54 +176,60 @@
         <div class="container marketing mt-4">
           <div class="row">
             <div class="col-lg-3">
-              <p class="text-secondary">Date: 24-01-2023</p>
+              <p class="text-secondary">January 24 2023</p>
             </div>
             <div class="col-lg-6">
               <p class="headingBanner text-dark text-center">परिधि या परी</p>
             </div>
-            <div class="col-lg-3">
-              <button  onclick="visibleShare()" 
-              class="text-secondary btn border borderr-secondary float-end">
+            <div class="col-lg-3 col-11">
+              <div class="float-end ">
+                <div  onclick="visibleShare()" 
+                class="text-secondary btn border borderr-secondary">
               <i
                 class="fa fa-share-alt"
                 aria-hidden="true"
                 class="main"
               ></i>
               &nbsp;share
-            </button>
-            <div class="row share-buttons " onblur="hideShare()" id="hiddenShare">
-              <div class="col-3">
-                <button class="share-button facebook p-1 ">
-                  <i class="fab fa-facebook-f"></i>
-               </button>
-              </div>
-              <div class=" col-6">
-                <button class="share-button twitter  p-1">
-                  <i class="fab fa-twitter"></i>
-               </button> 
-              </div>
-              <div class=" col-6">
-                <button class="share-button linkedin p-1">
-                   <i class="fab fa-linkedin"></i>
+              
+                </div> 
+                <div class="row share-buttons " onblur="hideShare()" id="hiddenShare">
+              
+              <div class="shareOverlap">
+                <div class="col-12">
+                <button class="share-button facebook">
+                  <i class="fab fa-facebook-f"></i>&nbsp;&nbsp;facebook
                 </button>
-              </div>
-              <div class=" col-6">
+                </div>
+                <div class="col-12">
+                <button class="share-button twitter  ml-2">
+                <i class="fab fa-twitter"></i>&nbsp;&nbsp;twitter
+                </button>
+                </div>
+                <div class="col-12">
+                <button class="share-button linkedin p-1">
+                  <i class="fab fa-linkedin"></i>&nbsp;&nbsp;linked In
+                </button>
+                </div>
+                <div class="col-12">
                 <button class="share-button pinterest p-1">
-                  <i class="fab fa-pinterest"></i>
-               </button>
-              </div>
-              <div class=" col-6">
-                <button class="share-button reddit p-1">
-                  <i class="fab fa-reddit-alien"></i>
-               </button>
-              </div>
-              <div class=" col-6">
+                <i class="fab fa-pinterest"></i>&nbsp;&nbsp;pinterest
+                </button>
+                </div>
+                <div class="col-12">
                 <button class="share-button whatsapp p-1">
-                  <i class="fab fa-whatsapp"></i>
-               </button>
+                  <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;whatsapp
+                </button>
+                </div>
+                <div class="col-12">
+                <button class="share-button copyLink p-1" onclick="copyUrl()">
+                  <i class="fa-regular fa-clipboard"></i>&nbsp;&nbsp;copy link
+                </button>
+                </div>
               </div>
-            </div>  
-            </div>
+                </div>
+              </div>
+            </div> 
           </div>
           <div class="row">
             <span class="font-spacing">
@@ -449,6 +454,11 @@ function hideShare() {
     x.style.display = "none";
   }
 }
+function copyUrl(){
+  navigator.clipboard.writeText("https://rohitpradhan.com/");
+  alert("Copied to clipboard ");
+
+}
     // Get all share buttons
     const shareButtons = document.querySelectorAll('.share-button');
     // Add click event listener to each button
@@ -481,7 +491,9 @@ function hideShare() {
              break;
           }
           // Open a new window to share the URL
-          window.open(shareUrl, '_blank');
+          if(shareUrl!=null){
+            window.open(shareUrl, '_blank');
+          }
        });
     });
     
