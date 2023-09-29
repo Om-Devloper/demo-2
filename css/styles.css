@@ -222,12 +222,12 @@ footer{
 
 .absoluteBanner {
   position: absolute;
-  top: 130px;
+  top: 90px;
   width: 100%;
 }
 .absoluteBack {
   position: absolute;
-  top: 10px;
+  top: 200px;
   width: 100%;
 }
 .headingBanner{

@@ -52,6 +52,8 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/scripts.js"></script>
+
   </head>
 
   <body>
@@ -131,14 +133,18 @@
       </div>
     </header>
     <main>
-      <div>
-        <div
-          class="responciveImAGE relativeBanner"
-          style="background-image: url(assets/img/banner3.jpg)"
-        >
+    <!-- banner Start-->
+        <div class="responciveImAGE relativeBanner"style="background-image: url(assets/img/banner3.jpg)">
+          <div class="absoluteBanner container">
+            <p class="headingBanner">Stories</p>
+            <span style="color: #fff; font-size: 25px"
+              >"हमारी कोशिश है, आपकी कशिश बनी रहे"
+            </span>
+          </div>
+          
           <div class="absoluteBack">
-            <div class="row">
-              <span class="col-6">
+            <div class="row float-end">
+              <span class="">
                 <a
                   class="text-light btn border borderr-light p-2 m-4"
                   href="blog.html"
@@ -150,30 +156,17 @@
                   &nbsp;Back to stories
                 </a>
               </span>
-              <span class="col-6">
-
-              </span>
               
             </div>
           </div>
-          <div class="absoluteBanner container">
-            <p class="headingBanner">Stories</p>
-            <span style="color: #fff; font-size: 25px"
-              >"हमारी कोशिश है, आपकी कशिश बनी रहे"
-            </span>
-          </div>
         </div>
-      </div>
-      <div>
-        <div
-          class="relativeBanner bd-placeholder-img"
-          style="background-image: url(assets/img/banner2.jpg)"
-        >
-          <div class="absoluteBanner"></div>
+        <div class="relativeBanner bd-placeholder-img" style="background-image: url(assets/img/banner2.jpg)">
         </div>
-      </div>
-      <div>
+    <!-- banner end-->
+    
+    <!-- Story-->
         <div class="container marketing mt-4">
+    <!-- story Header-->
           <div class="row">
             <div class="col-lg-3">
               <p class="text-secondary">January 24 2023</p>
@@ -182,7 +175,7 @@
               <p class="headingBanner text-dark text-center">परिधि या परी</p>
             </div>
             <div class="col-lg-3 col-11">
-              <div class="float-end ">
+              <div class="float-end " onblur="x.style.display">
                 <div  onclick="visibleShare()" 
                 class="text-secondary btn border borderr-secondary">
               <i
@@ -193,44 +186,45 @@
               &nbsp;share
               
                 </div> 
-                <div class="row share-buttons " onblur="hideShare()" id="hiddenShare">
+                <div class="row share-buttons "  id="hiddenShare">
               
-              <div class="shareOverlap">
-                <div class="col-12">
-                <button class="share-button facebook">
-                  <i class="fab fa-facebook-f"></i>&nbsp;&nbsp;facebook
-                </button>
-                </div>
-                <div class="col-12">
-                <button class="share-button twitter  ml-2">
-                <i class="fab fa-twitter"></i>&nbsp;&nbsp;twitter
-                </button>
-                </div>
-                <div class="col-12">
-                <button class="share-button linkedin p-1">
-                  <i class="fab fa-linkedin"></i>&nbsp;&nbsp;linked In
-                </button>
-                </div>
-                <div class="col-12">
-                <button class="share-button pinterest p-1">
-                <i class="fab fa-pinterest"></i>&nbsp;&nbsp;pinterest
-                </button>
-                </div>
-                <div class="col-12">
-                <button class="share-button whatsapp p-1">
-                  <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;whatsapp
-                </button>
-                </div>
-                <div class="col-12">
-                <button class="share-button copyLink p-1" onclick="copyUrl()">
-                  <i class="fa-regular fa-clipboard"></i>&nbsp;&nbsp;copy link
-                </button>
-                </div>
-              </div>
+                  <div class="shareOverlap" >
+                    <div class="col-12">
+                    <button class="share-button facebook" onclick="facebook()">
+                      <i class="fab fa-facebook-f"></i>&nbsp;&nbsp;facebook
+                    </button>
+                    </div>
+                    <div class="col-12">
+                    <button class="share-button twitter  ml-2" onclick="twitter()">
+                    <i class="fab fa-twitter"></i>&nbsp;&nbsp;twitter
+                    </button>
+                    </div>
+                    <div class="col-12">
+                    <button class="share-button linkedin p-1" onclick="linkedin()">
+                      <i class="fab fa-linkedin"></i>&nbsp;&nbsp;linked In
+                    </button>
+                    </div>
+                    <div class="col-12">
+                    <button class="share-button pinterest p-1" onclick="pinterest()">
+                    <i class="fab fa-pinterest"></i>&nbsp;&nbsp;pinterest
+                    </button>
+                    </div>
+                    <div class="col-12">
+                    <button class="share-button whatsapp p-1"onclick="whatsapp()">
+                      <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;whatsapp
+                    </button>
+                    </div>
+                    <div class="col-12">
+                    <button class="share-button copyLink p-1" onclick="copyUrl()">
+                      <i class="fa-regular fa-clipboard"></i>&nbsp;&nbsp;copy link
+                    </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div> 
           </div>
+    <!-- story Start-->
           <div class="row">
             <span class="font-spacing">
               उस दिन सुबह से ही अजीब सा लग रहा था, मन किसी काम में ना लगता था ।
@@ -413,9 +407,9 @@
               <br /><br />
             </span>
           </div>
-          <hr class="featurette-divider" />
           
-          <div id="Stories">
+    <!-- comment-->
+          <hr class="featurette-divider" />
           <div class="row">
           <div class="col-12">
             <p class="heading">Comment</p>
@@ -433,13 +427,14 @@
               </div>
               
               <div class="form-group pt-3">
-                <button type="submit" class="btn btn-primary mb-2">submit</button>
+                <button type="submit" class="btn btn-primary mb-2">Submit Comment</button>
               </div>
             </form>
             
           </div>
-        </div>
           </div>
+          
+    <!-- Back To main-->
           <div class="row">
             <span class="text-center col-12 pt-5">
               <a
@@ -455,7 +450,6 @@
             </span>
           </div>
         </div>
-      </div>
     </main>
 
     <footer class="footer mt-3">
@@ -467,63 +461,7 @@
     </footer>
     <script>
       
-      function visibleShare() {
-  var x = document.getElementById("hiddenShare");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-function hideShare() {
-  var x = document.getElementById("hiddenShare");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  }
-}
-function copyUrl(){
-  navigator.clipboard.writeText("https://rohitpradhan.com/");
-  alert("Copied to clipboard ");
-
-}
-    // Get all share buttons
-    const shareButtons = document.querySelectorAll('.share-button');
-    // Add click event listener to each button
-    shareButtons.forEach(button => {
-       button.addEventListener('click', () => {
-          // Get the URL of the current page
-          const url = window.location.href;
-          // Get the social media platform from the button's class name
-          const platform = button.classList[1];
-          // Set the URL to share based on the social media platform
-          let shareUrl;
-          switch (platform) {
-             case 'facebook':
-             shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-             break;
-             case 'twitter':
-             shareUrl = `https://twitter.com/share?url=${encodeURIComponent(url)}`;
-             break;
-             case 'linkedin':
-             shareUrl = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(url)}`;
-             break;
-             case 'pinterest':
-             shareUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}`;
-             break;
-             case 'reddit':
-             shareUrl = `https://reddit.com/submit?url=${encodeURIComponent(url)}`;
-             break;
-             case 'whatsapp':
-             shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(url)}`;
-             break;
-          }
-          // Open a new window to share the URL
-          if(shareUrl!=null){
-            window.open(shareUrl, '_blank');
-          }
-       });
-    });
-    
- </script>
+    </script>
+   
   </body>
 </html>

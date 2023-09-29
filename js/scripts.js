@@ -1,37 +1,48 @@
-/*!
-* Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
-$('.carousel').carousel({
-    interval: 2000
-  })
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const horizontalNav = document.body.querySelector('#horizontalNav');
-    if (horizontalNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#horizontalNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-
-});
+function visibleShare() {
+  var x = document.getElementById("hiddenShare");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function hideShare() {
+  var x = document.getElementById("hiddenShare");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  }
+}
+function copyUrl() {
+  navigator.clipboard.writeText("https://rohitpradhan.com/");
+  alert("Copied to clipboard ");
+}
+function facebook() {
+    const url = window.location.href;
+    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+    window.open(shareUrl, "_blank");
+}
+function twitter() {
+    const url = window.location.href;
+    shareUrl = `https://twitter.com/share?url=${encodeURIComponent(url)}`;
+    window.open(shareUrl, "_blank");
+}
+function linkedin() {
+    const url = window.location.href;
+    shareUrl = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(url)}`;
+    window.open(shareUrl, "_blank");
+}
+function pinterest() {
+    const url = window.location.href;
+    shareUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}`;
+    window.open(shareUrl, "_blank");
+} 
+function reddit() {
+    const url = window.location.href;
+    shareUrl = `https://reddit.com/submit?url=${encodeURIComponent(url)}`;
+    window.open(shareUrl, "_blank");
+}
+function whatsapp() {
+    const url = window.location.href;
+    shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(url)}`;
+    window.open(shareUrl, "_blank");
+}
