@@ -114,7 +114,9 @@ footer{
   color: #311E25;
   
 }
-
+.detail-bg{
+  background-color: #eee6e8;
+}
 
 #horizontalNav .navbar-nav .nav-item .nav-link {
   font-size: larger;
