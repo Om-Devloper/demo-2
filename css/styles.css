@@ -111,8 +111,10 @@ footer{
 }
 
 .text-color{
-  color: #311E25;
-  
+  color: #311E25; 
+}
+.text-color-2{
+  color: #634953; 
 }
 .detail-bg{
   background-color: #eee6e8;
