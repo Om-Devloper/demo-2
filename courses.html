@@ -9,14 +9,17 @@
   <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
   <title>Courses</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/" />
+    <!-- toastr -->
+    <link href="toastr.css" rel="stylesheet"/>
+    <script src="toastr.js"></script>
   <!-- Bootstrap core CSS -->
-  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.icon" />
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -73,7 +76,7 @@
       </nav>
     </div>
   </header>
-  <main class="">
+  <main>
     <section id="description" class="col-12  pt-3 text-justify container">
       <div class="row featurette pt-3 ">
       <div class="col-md-5 order-md-2 pt-4  ">
@@ -97,12 +100,13 @@
             
           </div>
         </div>
-        
-       
-        <a href="payment.html" class="btn btn-primary pt-2">Enroll Now</a>
+        <button class="btnModal btn btn-primary pt-2">Enroll Now</button>
       </div>
       </div>
     </section>
+    <marquee class="mt-3 p-3 bg-warning d-block" style="color: rgb(160, 5, 36); font-size: 25px">
+      <span class="text-center">Master Power Point Course Worth ₹1499 is <b style="font-size: 28px;">FREE</b> on Enrolling to Advance Excel Course.</span>
+    </marquee>
     <section id="objective" class="detail-bg mt-5">
       <div class="row">
         <div class="col-12 text-center p-lg-5"> 
@@ -167,7 +171,7 @@
               </div>
             </div>
           </div>
-          <a href="payment.html" class="btn btn-primary pt-2 col-lg-2">Enroll Now</a>
+          <button class="btnModal btn btn-primary pt-2 col-lg-2">Enroll Now</button>
 
         </div>
       </div>
@@ -186,7 +190,7 @@
                       <i class="fa fa-laptop heading text-warning" aria-hidden="true"></i>
                     </div>
                     <div class="col-9 h3 text-justify" >
-                      Offline As Well<br>As Online Mode  
+                      Classroom and Live<br>Online Session
                     </div>
                   </div>
                 </div>
@@ -255,6 +259,21 @@
               <p class="heading text-center" style="color: #503e44;">Course<br>Curriculum</p>
               <div class="dropdown p-2">
                 <button class="btn btn-lg dropdown-toggle border border-3 col-12" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="h6">AI Prompting and Use Case</span>
+                </button>
+                <ul class="dropdown-menu bg-warning-subtle dropdown-menu-light col-12" aria-labelledby="dropdownMenuButton2">
+                  <li class="dropdown-item">Use of AI tools in Excel
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="dropdown-item">Introduction of Office Copilot
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="dropdown-item">How to prompt AI For Tasks
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown p-2">
+                <button class="btn btn-lg dropdown-toggle border border-3 col-12" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="h6">ADVANCED FUNCTIONS</span>
                 </button>
                 <ul class="dropdown-menu bg-warning-subtle dropdown-menu-light col-12" aria-labelledby="dropdownMenuButton2">
@@ -273,7 +292,13 @@
                   <li class="dropdown-item">Index Match
                   </li>
                   <li><hr class="dropdown-divider"></li>
-                  <li class="dropdown-item">Offset and other function
+                  <li class="dropdown-item">Logical Functions Like If,<br>If Error, Ifs
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="dropdown-item">Lookup Functions Like Vlookup,<br>Lookup, Hlookup
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="dropdown-item">Understaffing of Formula Syntax
                   </li>
                 </ul>
               </div>
@@ -297,7 +322,7 @@
                   <li class="dropdown-item">Using Developer Tool
                   </li>
                   <li><hr class="dropdown-divider"></li>
-                  <li class="dropdown-item">Scenario analysis
+                  <li class="dropdown-item">Pivot and Advanced Pivot Table
                   </li>
                   <li><hr class="dropdown-divider"></li>
                   <li class="dropdown-item">What if Analysis and Goal Seek
@@ -318,7 +343,7 @@
                   <li class="dropdown-item">Conditional Formatting Tricks <br>dashboard making Hacks
                   </li>
                   <li><hr class="dropdown-divider"></li>
-                  <li class="dropdown-item">Special and Advanced Charts
+                  <li class="dropdown-item">Charts
                   </li>
                   <li><hr class="dropdown-divider"></li>
                   <li class="dropdown-item">Advanced Filter
@@ -372,7 +397,7 @@
                   <li class="dropdown-item">Format, trim, clean, upper <br>and lower cases
                   </li>
                   <li><hr class="dropdown-divider"></li>
-                  <li class="dropdown-item">Nested let in
+                  <li class="dropdown-item">Conditional Formatting
                   </li>
                 </ul>
               </div>
@@ -397,9 +422,6 @@
                   </li>
                   <li><hr class="dropdown-divider"></li>
                   <li class="dropdown-item">Index and Conditional Column
-                  </li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li class="dropdown-item">Parametes
                   </li>
                 </ul>
               </div>
@@ -461,7 +483,7 @@
         </div>
       </div>
       <diV class="col-12 text-center pt-4">
-      <a href="payment.html" class="btn btn-primary pt-2 col-lg-2 text-center">Enroll Now</a>
+      <button  class="btnModal btn btn-primary pt-2 col-lg-2 text-center">Enroll Now</button>
       </diV>
     </section>
     <section id="ourExpert" class="mt-4 container">
@@ -500,9 +522,6 @@ I am a Chartered accountant, a passionate trainer and a startup mentor. In my 12
             </p>
           </div>
         </div>
-      <!-- Carousel wrapper -->
-
-<!-- Carousel wrapper -->
         <div class="row text-center">
           <div class="col-md-4 mb-5 mb-md-0">
             <div class="d-flex justify-content-center mb-4">
@@ -528,7 +547,7 @@ I am a Chartered accountant, a passionate trainer and a startup mentor. In my 12
                 <i class="fas fa-star fa-sm text-warning"></i>
               </li>
               <li>
-                <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+                <i class="fas fa-star fa-sm text-warning"></i>
               </li>
             </ul>
           </div>
@@ -584,21 +603,73 @@ I am a Chartered accountant, a passionate trainer and a startup mentor. In my 12
                 <i class="fas fa-star fa-sm text-warning"></i>
               </li>
               <li>
-                <i class="far fa-star fa-sm text-warning"></i>
+                <i class="fas fa-star fa-sm text-warning"></i>
               </li>
             </ul>
           </div>
         </div>
-
     </section>
     <section id="ourExpert" class="mt-4 container">
       <hr class="featurette-divider" />
       <div class="row">
-          <p class="heading col-lg-10" style="color: #503e44;">Ready to Excel? </p>
-      <a href="payment.html" class="btn btn-primary col-lg-2 text-center">Enroll Now</a>
+          <p class="heading col-lg-10" style="color: #503e44; font-size: 35px;">Ready to Excel? </p>
+        <button class="btnModal btn btn-primary p-4 col-lg-2 text-center" type="button" data-target="#exampleModalCenter">
+          Enroll Now
+        </button>
       </div>
     </section>
   </main>
+  
+<!-- Modal -->
+<div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Inquiry Form</h5>
+        </button>
+      </div>
+      <form>
+      <div class="modal-body">
+        <div class="form-group p-2">
+          <h5 for="name">Name*</h5>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter name"
+            required
+          />
+        </div>
+        <div class="form-group p-2">
+          <h5 for="email">Email*</h5>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+            required
+          />
+        </div>
+        <div class="form-group p-2">
+          <h5 for="Contact">Contact Number</h5>
+          <input type="text" class="form-control" placeholder="Enter Number" id="contact" rows="3"></input>
+        </div>
+
+        <div class="form-group p-2">
+          <h5 for="occupation">Occupation</h5>
+          <input type="text" class="form-control" placeholder="Enter Occupation" id="occupation" rows="3" required></input>
+          <input type="hidden" value="Inquiry For Courses" id="type"/> 
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="modalClose">Close</button>
+        <button type="submit" class="btn btn-primary" onclick="sendMail()">Submit</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
   <footer class="footer mt-3">
     <div class="text-center">
       <p class="font-11 text-black-777 m-0">
@@ -606,6 +677,17 @@ I am a Chartered accountant, a passionate trainer and a startup mentor. In my 12
       </p>
     </div>
   </footer>
+<script type="text/javascript">
+      (function () {
+        emailjs.init("8WrGkF37nZ8BSCCzy");
+      })();
+        $('.btnModal').on('click', function () {
+            $('#modalForm').modal('show');  
+        })
+        $('#modalClose').on('click', function () {
+            $('#modalForm').modal('hide');  
+        })
+</script>
 </body>
 </html>
 <!-- 
@@ -696,4 +778,35 @@ I am a Chartered accountant, a passionate trainer and a startup mentor. In my 12
       </li>
     </ul>
   </div>
-</div> -->
+</div> 
+
+$("#btnSubmit").click(function (e) {
+            var tValidate = true;
+            if (document.getElementById('btnSubmit').innerHTML.toString() == "Submit") {
+                if (tValidate) {
+                    if ($("#name").val() == "") {
+                        alert("Please Enter Name");
+                        tValidate = false;
+                        $("#name").focus();
+                    }
+                }
+                if (tValidate) {
+                    if ($("#email").val() == "") {
+                        alert("Please Enter Email Id");
+                        tValidate = false;
+                        $("#email").focus();
+                    }
+                }
+                if (tValidate) {
+                    if ($("#contact").val() == "") {
+                        alert("Please Enter Phone Number");
+                        tValidate = false;
+                        $("#contact").focus();
+                    }
+                }
+                if (tValidate) {
+
+                }
+          }
+        })
+-->

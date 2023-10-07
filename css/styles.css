@@ -13,6 +13,12 @@ html, body {
   -webkit-hyphens: auto;
   word-spacing: -0.1em;
 }
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10;
+  z-index: 5;
+}
 .main{
   color:#85696f!important
 }
